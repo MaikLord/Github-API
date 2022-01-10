@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Honker™</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://honker.com.br/wp-content/uploads/2021/10/logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a href="http://localhost:5500">
+            <img src="https://honker.com.br/wp-content/uploads/2021/10/logo.svg" alt="">
+        </a>
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>Support</li>
+            </a>
+            <a href="#">
+                <li>Packages</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div class="side1">
+                <div class="side1_container">
+                    <div class="profile">
+                        <img id="avatar" src="https://avatars.githubusercontent.com/u/77784071?v=4" alt="">
+                        <h1 id="user"></h1>
+                    </div>
+                    <p id="bio"></p>
+                    <a href="" id="userUrl" target="_blank"><i class="fab fa-github"></i></a>
+
+                </div>
+            </div>
+            <div class="side2">
+                <input onkeyup="fetchUrl(this.value);fetchRepo(this.value)" onkeydown="fetchUrl(this.value)" value=""
+                    placeholder="Search User" type="text" id="searchUser">
+                <h1>Newest Repositories</h1>
+                <div class="repositories">
+                    <ul>
+                        <a id="repoUrl0" target="_blank" href="">
+                            <li id="repos0"></li>
+                            <i class="far fa-star"></i>
+                            <li class="sub_repo" id="reposStars0"></li>
+
+                        </a>
+                        <a id="repoUrl1" target="_blank" href="">
+                            <li id="repos1"></li>
+                        </a>
+                        <a id="repoUrl2" target="_blank" href="">
+                            <li id="repos2"></li>
+                        </a>
+                        <a id="repoUrl3" target="_blank" href="">
+                            <li id="repos3"></li>
+                        </a>
+                        <a id="repoUrl4" target="_blank" href="">
+                            <li id="repos4"></li>
+                        </a>
+                        <a id="repoUrl5" target="_blank" href="">
+                            <li id="repos5"></li>
+                        </a>
+                        <a id="repoUrl6" target="_blank" href="">
+                            <li id="repos6"></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

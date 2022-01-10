@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #202020;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  background-color: #101010;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .repositories a {
+    width: 80%;
+  }
+  .repositories ul {
+    width: 80%;
+  }
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  margin: 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a:hover {
+  -webkit-text-decoration: underline #E84443;
+          text-decoration: underline #E84443;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  width: 100%;
+  margin: 15px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 80vh;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+main .container .side1 {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #E84443;
+  min-width: 250px;
+}
+
+main .container .side1 .side1_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .side1 .side1_container button {
+  margin: 15px 0;
+  min-width: 250px;
+  outline: none;
+  border: none;
+  padding: 5px 60px;
+  color: #101010;
+  border-radius: 3px;
+}
+
+main .container .side1 .side1_container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 30px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+main .container .side1 .side1_container button:hover {
+  background-color: #e2e2e2;
+  cursor: pointer;
+}
+
+main .container .side1 .side1_container .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+main .container .side1 .side1_container .profile img {
+  margin-top: -50px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 40%;
+}
+
+main .container .side1 .side1_container .profile h1 {
+  margin-top: 8px;
+  font-size: 12pt;
+}
+
+main .container .side2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+  overflow: visible;
+}
+
+main .container .side2 input {
+  padding: 5px 0;
+  outline: none;
+  border: 1px solid #202020;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  color: #202020;
+  width: 80%;
+  height: 30px;
+}
+
+main .container .side2 h1 {
+  color: #202020;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  margin-bottom: 10px;
+}
+
+main .container .side2 .repositories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container .side2 .repositories a {
+  margin: 0;
+  margin-top: 5px;
+  text-decoration: none;
+  width: 100%;
+}
+
+main .container .side2 .repositories li:hover {
+  background-color: #151515;
+}
+
+main .container .side2 .repositories ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container .side2 .repositories li {
+  background-color: #202020;
+  color: white;
+  font-family: 'Roboto', 'sans-serif';
+  padding: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+main .container .side2 .sub_repo {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
