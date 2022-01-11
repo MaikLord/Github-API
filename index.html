@@ -41,41 +41,17 @@
                         <h1 id="user"></h1>
                     </div>
                     <p id="bio"></p>
+                    <p id="followers"></p>
+                    <p id="public_repos"></p>
                     <a href="" id="userUrl" target="_blank"><i class="fab fa-github"></i></a>
-
                 </div>
             </div>
             <div class="side2">
-                <input onkeyup="fetchUrl(this.value);fetchRepo(this.value)" onkeydown="fetchUrl(this.value)" value=""
-                    placeholder="Search User" type="text" id="searchUser">
+                <input onkeypress="handle(event)" value="" placeholder="Search User" type="text" id="searchUser">
                 <h1 class="newest">Newest Repositories</h1>
-                <div class="repositories">
+                <div id="repositories" class="repositories">
                     <ul>
-                        <a id="repoUrl0" target="_blank" href="">
-                            <li id="repos0"></li>
-                            <i id="reposStars0" class="far fa-star"></i>
-                            <i id="reposEye0" class="fas fa-eye"></i>
-                        </a>
-                        <a id="repoUrl1" target="_blank" href="">
-                            <li id="repos1"></li>
-                            <i id="reposStars1" class="far fa-star"></i>
-                        </a>
-                        <a id="repoUrl2" target="_blank" href="">
-                            <li id="repos2"></li>
-                            <i id="reposStars2" class="far fa-star"></i>
-                        </a>
-                        <a id="repoUrl3" target="_blank" href="">
-                            <li id="repos3"></li>
-                            <i id="reposStars3" class="far fa-star"></i>
-                        </a>
-                        <a id="repoUrl4" target="_blank" href="">
-                            <li id="repos4"></li>
-                            <i id="reposStars4" class="far fa-star"></i>
-                        </a>
-                        <a id="repoUrl5" target="_blank" href="">
-                            <li id="repos5"></li>
-                            <i id="reposStars5" class="far fa-star"></i>
-                        </a>
+
                     </ul>
                 </div>
             </div>

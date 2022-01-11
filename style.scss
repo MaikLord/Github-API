@@ -8,6 +8,8 @@
 
 body {
     background-color: #202020;
+    overflow-x: hidden;
+    
 }
 header {
     display: flex;
@@ -17,6 +19,7 @@ header {
     padding: 10px 0;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
 }
 @media only screen and (max-width: 768px) {
     header {
@@ -62,6 +65,7 @@ a:hover {
 main {
     display: flex;
     width: 100%;
+    overflow-y: hidden;
 
     .container {
         display: grid;
@@ -72,22 +76,25 @@ main {
         min-height: 80vh;
         background-color: #fff;
         border-radius: 8px;
+        overflow-y: hidden;
 
         .side1 {
             border-bottom-left-radius: 5px;
             border-top-left-radius: 5px;
             background-color: #E84443;
             min-width: 200px;
+            overflow-y: hidden;
             
             .side1_container {
                 display: flex;
                 flex-direction: column;
-                height: 100%;
+                min-height: max-content;
                 justify-content: center;
                 align-items: center;
+                overflow-y: hidden;
          
                 button {
-                    margin: 15px 0;
+                    margin: 0;
                     min-width: 250px;
                     outline: none;
                     border: none;
@@ -115,10 +122,10 @@ main {
                     align-items: center;
                     font-family: 'Roboto', sans-serif;
                     color: white;
+                    max-height: 300px;
 
                     img {
-                        margin-top: -50px;
-                        margin-bottom: 20px;
+                        margin: 15px;
                         border-radius: 50%;
                         width: 40%;
                     }
@@ -132,11 +139,12 @@ main {
         }
         .side2 {
             display: flex;
-            border-radius: 5px;
             background-color: #fff;
             flex-direction: column;
             margin: 15px;
-            overflow: visible;
+            height: 75vh;
+            overflow-y: auto;
+
 
             input {
                 padding: 5px 5px;
@@ -177,6 +185,7 @@ main {
                 i {
                     display: flex;
                     margin: 0 25px;
+                    letter-spacing: 3px;
                     line-height: 1;
                 }
                 

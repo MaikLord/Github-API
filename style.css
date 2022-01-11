@@ -8,6 +8,7 @@
 
 body {
   background-color: #202020;
+  overflow-x: hidden;
 }
 
 header {
@@ -24,6 +25,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Roboto', sans-serif;
+  overflow-y: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -78,6 +80,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  overflow-y: hidden;
 }
 
 main .container {
@@ -93,6 +96,7 @@ main .container {
   min-height: 80vh;
   background-color: #fff;
   border-radius: 8px;
+  overflow-y: hidden;
 }
 
 main .container .side1 {
@@ -100,6 +104,7 @@ main .container .side1 {
   border-top-left-radius: 5px;
   background-color: #E84443;
   min-width: 200px;
+  overflow-y: hidden;
 }
 
 main .container .side1 .side1_container {
@@ -110,17 +115,20 @@ main .container .side1 .side1_container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: hidden;
 }
 
 main .container .side1 .side1_container button {
-  margin: 15px 0;
+  margin: 0;
   min-width: 250px;
   outline: none;
   border: none;
@@ -157,11 +165,11 @@ main .container .side1 .side1_container .profile {
           align-items: center;
   font-family: 'Roboto', sans-serif;
   color: white;
+  max-height: 300px;
 }
 
 main .container .side1 .side1_container .profile img {
-  margin-top: -50px;
-  margin-bottom: 20px;
+  margin: 15px;
   border-radius: 50%;
   width: 40%;
 }
@@ -175,14 +183,14 @@ main .container .side2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 5px;
   background-color: #fff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 15px;
-  overflow: visible;
+  height: 75vh;
+  overflow-y: auto;
 }
 
 main .container .side2 input {
@@ -234,6 +242,7 @@ main .container .side2 .repositories i {
   display: -ms-flexbox;
   display: flex;
   margin: 0 25px;
+  letter-spacing: 3px;
   line-height: 1;
 }
 
