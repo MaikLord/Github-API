@@ -45,7 +45,7 @@ header {
     width: fit-content;
   }
   .repositories a {
-    width: 100%;
+    width: 95%;
     font-size: 8pt;
   }
   .repositories ul {
